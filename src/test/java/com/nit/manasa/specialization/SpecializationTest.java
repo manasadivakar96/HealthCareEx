@@ -27,7 +27,7 @@ public class SpecializationTest {
      @Autowired
 	
  private SpecializationRepository repo;
-     @Disabled
+      
      @Test
      @Order(1)
      public void testSpecCreate() {

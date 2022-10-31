@@ -3,6 +3,7 @@ package com.nit.manasa.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.nit.manasa.entity.Specialization;
@@ -10,6 +11,7 @@ import com.nit.manasa.repo.SpecializationRepository;
 
 @Service
 public class SpecializationServiceImpl implements ISpecializationService {
+@Autowired
 private SpecializationRepository repo;
 	 
 	public Long saveSpecialization(Specialization spec) {
